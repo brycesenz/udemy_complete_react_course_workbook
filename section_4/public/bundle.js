@@ -50,7 +50,7 @@
 	var ReactDOM = __webpack_require__(158);
 	var Greeter = __webpack_require__(159);
 
-	var firstName = 'Bryce';
+	var firstName = 'Thomas';
 	var message = 'Udemy is well built';
 
 	ReactDOM.render(React.createElement(Greeter, { name: firstName, message: message }), document.getElementById('app'));
