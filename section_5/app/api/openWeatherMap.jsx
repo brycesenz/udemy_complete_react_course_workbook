@@ -14,7 +14,7 @@ module.exports = {
       if (response.data.cod && response.data.message) { 
         throw new Error(response.data.message);
       } else { 
-        // returning temperation
+        // returning temperature
         return response.data.main.temp;
       }
     }, function(response) {

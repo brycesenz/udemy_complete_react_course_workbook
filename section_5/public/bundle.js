@@ -24940,21 +24940,47 @@
 
 	  getInitialState: function getInitialState() {
 	    return {
-	      location: 'Miami, FL',
-	      temp: 88
+	      isLoading: false
 	    };
 	  },
 	  handleSearch: function handleSearch(location) {
 	    var that = this;
+
+	    this.setState({ isLoading: true });
+
 	    openWeatherMap.getTemp(location).then(function (temp) {
-	      that.setState({ location: location, temp: temp });
+	      that.setState({ location: location, temp: temp, isLoading: false });
 	    }, function (errorMessage) {
-	      alert(errorMessage);
+	      that.setState({ errorMessage: errorMessage.data.error.message, isLoading: false });
 	    });
 	  },
 	  render: function render() {
-	    var location = this.state.location;
-	    var temp = this.state.temp;
+	    var _state = this.state,
+	        location = _state.location,
+	        temp = _state.temp,
+	        isLoading = _state.isLoading,
+	        errorMessage = _state.errorMessage;
+
+
+	    function renderMessage() {
+	      if (isLoading) {
+	        return React.createElement(
+	          'h3',
+	          null,
+	          'Loading...'
+	        );
+	      } else if (temp && location) {
+	        return React.createElement(WeatherMessage, { location: location, temp: temp });
+	      } else if (errorMessage) {
+	        return React.createElement(
+	          'h3',
+	          null,
+	          'Error: ',
+	          errorMessage
+	        );
+	      }
+	    }
+
 	    return React.createElement(
 	      'div',
 	      null,
@@ -24964,7 +24990,7 @@
 	        'Weather Component'
 	      ),
 	      React.createElement(WeatherForm, { onSearch: this.handleSearch }),
-	      React.createElement(WeatherMessage, { location: location, temp: temp })
+	      renderMessage()
 	    );
 	  }
 	});
@@ -25072,7 +25098,7 @@
 	      if (response.data.cod && response.data.message) {
 	        throw new Error(response.data.message);
 	      } else {
-	        // returning temperation
+	        // returning temperature
 	        return response.data.main.temp;
 	      }
 	    }, function (response) {
