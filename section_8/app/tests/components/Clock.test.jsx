@@ -10,6 +10,15 @@ describe('Clock', () => {
     expect(Clock).toExist();
   });
 
+  describe('render', () => {
+    it('should render clock to output', () => {
+      var clock = TestUtils.renderIntoDocument(<Clock totalSeconds={62}/>);
+      var $el = $(ReactDOM.findDOMNode(clock));
+      var actualText = $el.find('.clock-text').text();
+      expect(actualText).toEqual('01:02')
+    });
+  });
+
   describe('formatSeconds', () => {
     it('should format seconds with large remainder', () => {
       var clock = TestUtils.renderIntoDocument(<Clock/>);
@@ -29,6 +38,5 @@ describe('Clock', () => {
       expect(clock.formatSeconds(seconds)).toEqual('01:01');
     });
   });
-
 });
 
