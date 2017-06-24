@@ -12,7 +12,8 @@ describe('Controls', () => {
 
   describe('render', () => {
     it('should render the clear and pause buttons when started', () => {
-      var controls = TestUtils.renderIntoDocument(<Controls countdownStatus='started'/>);
+      var dummyStatusChange = () => {};
+      var controls = TestUtils.renderIntoDocument(<Controls countdownStatus='started' onStatusChange={dummyStatusChange()} />);
 
       var $el = $(ReactDOM.findDOMNode(controls));
       var $pauseButton = $el.find('button:contains(Pause)');
@@ -26,7 +27,8 @@ describe('Controls', () => {
     });
 
     it('should render the clear and start buttons when started', () => {
-      var controls = TestUtils.renderIntoDocument(<Controls countdownStatus='paused'/>);
+      var dummyStatusChange = () => {};
+      var controls = TestUtils.renderIntoDocument(<Controls countdownStatus='paused' onStatusChange={dummyStatusChange()} />);
 
       var $el = $(ReactDOM.findDOMNode(controls));
       var $pauseButton = $el.find('button:contains(Pause)');
