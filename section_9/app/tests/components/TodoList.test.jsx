@@ -5,6 +5,7 @@ var $ = require('jQuery');
 var TestUtils = require('react-addons-test-utils');
 
 var TodoList = require('TodoList');
+var Todo = require('Todo');
 
 describe('TodoList', () => {
   it('should exist', () => {
@@ -20,7 +21,10 @@ describe('TodoList', () => {
 
 
       var list = TestUtils.renderIntoDocument(<TodoList todos={todos} />);
-      var renderedTodos = TestUtils.scryRenderedDOMComponentsWithClass(list, 'todo')
+      // var renderedTodos = TestUtils.scryRenderedDOMComponentsWithClass(list, 'todo')
+      // expect(renderedTodos.length).toEqual(2);
+
+      var renderedTodos = TestUtils.scryRenderedComponentsWithType(list, Todo)
       expect(renderedTodos.length).toEqual(2);
     });
   });

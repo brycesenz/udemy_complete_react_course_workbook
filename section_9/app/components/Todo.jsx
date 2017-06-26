@@ -12,8 +12,8 @@ var Todo = React.createClass({
     var {id, text} = this.props;
 
     return (      
-      <div className='todo'>
-        <p>{id}. {text}</p>
+      <div className="todo">
+        <p className="todo-text">{id}. {text}</p>
       </div>
     );    
   }
