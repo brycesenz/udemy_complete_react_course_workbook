@@ -11,26 +11,26 @@ describe('AddTodo', () => {
     expect(AddTodo).toExist();
   });
 
-  describe('onSubmit', () => {
-    it('should call onSubmit with todo input', () => {
+  describe('handleSubmit', () => {
+    it('should call handleSubmit with todo input', () => {
       var spy = expect.createSpy();
 
       var form = TestUtils.renderIntoDocument(<AddTodo onAddTodo={spy}/>);
       var $el = $(ReactDOM.findDOMNode(form));
 
-      form.refs.description.value = 'Walk my dog';
+      form.refs.todoText.value = 'Walk my dog';
       TestUtils.Simulate.submit($el.find('form')[0])
 
       expect(spy).toHaveBeenCalledWith('Walk my dog');
     });
 
-    it('should not call onSubmit with empty input', () => {
+    it('should not call handleSubmit with empty input', () => {
       var spy = expect.createSpy();
 
       var form = TestUtils.renderIntoDocument(<AddTodo onAddTodo={spy}/>);
       var $el = $(ReactDOM.findDOMNode(form));
 
-      form.refs.description.value = '';
+      form.refs.todoText.value = '';
       TestUtils.Simulate.submit($el.find('form')[0])
 
       expect(spy).toNotHaveBeenCalled();
