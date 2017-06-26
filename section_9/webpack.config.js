@@ -22,10 +22,11 @@ module.exports = {
   },
   resolve: {
     root: __dirname,
+    modulesDirectories: [
+      'node_modules',
+      './app/components'
+    ],
     alias: {
-      Main: 'app/components/Main.jsx',
-      TodoApp: 'app/components/TodoApp.jsx',
-      AddTodo: 'app/components/AddTodo.jsx',
       applicationStyles: 'app/styles/app.scss'
     },
     extensions: ['', '.js', '.jsx']

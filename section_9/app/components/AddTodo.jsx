@@ -4,7 +4,7 @@ var AddTodo = React.createClass({
   getDefaultProps: function() {
   },
   propTypes: {
-    onSubmit: React.PropTypes.func.isRequired
+    onAddTodo: React.PropTypes.func.isRequired
   },
   onSubmit: function(evt) {
     evt.preventDefault();
@@ -13,7 +13,7 @@ var AddTodo = React.createClass({
     
     if (todoDesc.length > 0) {
       this.refs.description.value = '';
-      this.props.onSubmit(todoDesc);
+      this.props.onAddTodo(todoDesc);
     }
   },
   render: function() {

@@ -15,7 +15,7 @@ describe('AddTodo', () => {
     it('should call onSubmit with todo input', () => {
       var spy = expect.createSpy();
 
-      var form = TestUtils.renderIntoDocument(<AddTodo onSubmit={spy}/>);
+      var form = TestUtils.renderIntoDocument(<AddTodo onAddTodo={spy}/>);
       var $el = $(ReactDOM.findDOMNode(form));
 
       form.refs.description.value = 'Walk my dog';
@@ -27,7 +27,7 @@ describe('AddTodo', () => {
     it('should not call onSubmit with empty input', () => {
       var spy = expect.createSpy();
 
-      var form = TestUtils.renderIntoDocument(<AddTodo onSubmit={spy}/>);
+      var form = TestUtils.renderIntoDocument(<AddTodo onAddTodo={spy}/>);
       var $el = $(ReactDOM.findDOMNode(form));
 
       form.refs.description.value = '';
