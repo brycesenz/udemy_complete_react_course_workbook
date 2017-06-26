@@ -1,13 +1,13 @@
 var React = require('react');
-var Nav = require('Nav');
+var TodoApp = require('TodoApp');
 
 var Main = (props) => {
   return (
     <div>
-      <Nav/>
       <div className='row'>
         <div className='columns medium-6 large-4 small-centered'>
-          {props.children}
+          <h1 className="page-title">Todo App</h1>
+          <TodoApp/>
         </div>
       </div>
     </div>

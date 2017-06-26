@@ -24,7 +24,8 @@ module.exports = {
     root: __dirname,
     alias: {
       Main: 'app/components/Main.jsx',
-      Nav: 'app/components/Nav.jsx',
+      TodoApp: 'app/components/TodoApp.jsx',
+      AddTodo: 'app/components/AddTodo.jsx',
       applicationStyles: 'app/styles/app.scss'
     },
     extensions: ['', '.js', '.jsx']
