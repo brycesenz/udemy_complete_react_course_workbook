@@ -1,13 +1,8 @@
 var React = require('react');
 
 var TodoSearch = React.createClass({
-  getDefaultProps: function() {
-  },
-  propTypes: {
-    onSearch: React.PropTypes.func.isRequired
-  },
   handleSearch: function(evt) {
-    evt.preventDefault();
+    // evt.preventDefault();
 
     var showCompleted = this.refs.showCompleted.checked;
     var searchText = this.refs.searchText.value;

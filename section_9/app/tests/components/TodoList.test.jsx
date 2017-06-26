@@ -21,9 +21,6 @@ describe('TodoList', () => {
 
 
       var list = TestUtils.renderIntoDocument(<TodoList todos={todos} />);
-      // var renderedTodos = TestUtils.scryRenderedDOMComponentsWithClass(list, 'todo')
-      // expect(renderedTodos.length).toEqual(2);
-
       var renderedTodos = TestUtils.scryRenderedComponentsWithType(list, Todo)
       expect(renderedTodos.length).toEqual(2);
     });

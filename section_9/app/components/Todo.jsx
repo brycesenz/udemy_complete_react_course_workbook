@@ -1,19 +1,27 @@
 var React = require('react');
 
 var Todo = React.createClass({
-  getDefaultProps: function() {
-    completionStatus: false
-  },
   propTypes: {
     text: React.PropTypes.string.isRequired,
-    completionStatus: React.PropTypes.bool
+    completed: React.PropTypes.bool,
+    onToggle: React.PropTypes.func
+  },
+  handleToggle: function(evt) {
+    evt.preventDefault();
+
+    var id = this.props.id
+    var completed = this.refs.completed.checked;
+    this.props.onToggle(id);
   },
   render: function() {
-    var {id, text} = this.props;
+    var {text, completed} = this.props;
 
     return (      
-      <div className="todo">
-        <p className="todo-text">{id}. {text}</p>
+      <div className="todo" onClick={this.handleToggle}>
+        <label>
+          <input type="checkbox" ref="completed" checked={completed} onChange={this.handleToggle}/>
+          {text}
+        </label>
       </div>
     );    
   }

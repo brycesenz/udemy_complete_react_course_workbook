@@ -11,6 +11,7 @@ describe('TodoApp', () => {
     expect(TodoApp).toExist();
   });
 
+
   describe('handleNewTodo', () => {
     it('should add Todo', () => {
       var app = TestUtils.renderIntoDocument(<TodoApp />);
@@ -19,6 +20,28 @@ describe('TodoApp', () => {
       app.handleNewTodo('My newest todo');
       expect(app.state.todos.length).toEqual(1);
       expect(app.state.todos[0].text).toEqual('My newest todo');
+    });
+  });
+
+  describe('handleTodoToggle', () => {
+    it('should update todos, changing status of toggled one', () => {
+      var app = TestUtils.renderIntoDocument(<TodoApp />);
+      var dummyTodos = [
+        {id: 1, text: "Walk the dog.", completed: false},
+        {id: 2, text: "Do homework.", completed: true},
+        {id: 3, text: "Make my bed.", completed: false},
+        {id: 4, text: "Workout.", completed: false},
+      ]
+
+      app.setState({todos: dummyTodos});
+
+      app.handleTodoToggle(3);
+      expect(app.state.todos).toEqual([
+        {id: 1, text: "Walk the dog.", completed: false},
+        {id: 2, text: "Do homework.", completed: true},
+        {id: 3, text: "Make my bed.", completed: true},
+        {id: 4, text: "Workout.", completed: false},
+      ]);
     });
   });
 });
