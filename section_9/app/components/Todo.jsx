@@ -28,7 +28,7 @@ var Todo = React.createClass({
         <div>
           <input type="checkbox" ref="completed" checked={completed} onChange={this.handleToggle}/>
         </div>
-        <div>
+        <div className='todo-description'>
           <p>{text}</p>
           <p className="todo__subtext">{renderDate()}</p>
         </div>

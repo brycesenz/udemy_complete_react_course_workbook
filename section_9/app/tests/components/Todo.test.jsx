@@ -16,7 +16,7 @@ describe('Todo', () => {
       var todo = TestUtils.renderIntoDocument(<Todo id={4} text="Dummy Todo."/>);
  
       var $el = $(ReactDOM.findDOMNode(todo));
-      var actualText = $el.find('label').text();
+      var actualText = $el.find('.todo-description').text();
       expect(actualText).toInclude('Dummy Todo.')
     });
   });
