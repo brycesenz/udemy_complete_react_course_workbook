@@ -15,8 +15,8 @@ describe('TodoList', () => {
   describe('render', () => {
     it('should render exactly the number of todos', () => {
       var todos = [
-        {id: 1, description: "Todo 1"},
-        {id: 2, description: "Todo 2"}
+        {id: 1, text: "Todo 1"},
+        {id: 2, text: "Todo 2"}
       ];
 
 
