@@ -1,6 +1,6 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-var Main = require('Main');
+var TodoApp = require('TodoApp');
 
 // load Foundation
 $(document).foundation();
@@ -9,6 +9,6 @@ $(document).foundation();
 require('style!css!sass!applicationStyles')
 
 ReactDOM.render(
-  <Main/>,
+  <TodoApp/>,
   document.getElementById('app')
 );

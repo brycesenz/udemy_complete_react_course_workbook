@@ -24,6 +24,18 @@ describe('TodoList', () => {
       var renderedTodos = TestUtils.scryRenderedComponentsWithType(list, Todo)
       expect(renderedTodos.length).toEqual(2);
     });
+
+    it('should render message with no todos', () => {
+      var todos = [];
+
+      var list = TestUtils.renderIntoDocument(<TodoList todos={todos} />);
+      var renderedTodos = TestUtils.scryRenderedComponentsWithType(list, Todo)
+      expect(renderedTodos.length).toEqual(0);
+
+      var $el = $(ReactDOM.findDOMNode(list));
+      var actualText = $el.find('.container__message').text();
+      expect(actualText).toEqual('Nothing to do!')
+    });
   });
 });
 
