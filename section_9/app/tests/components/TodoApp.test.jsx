@@ -20,6 +20,8 @@ describe('TodoApp', () => {
       app.handleNewTodo('My newest todo');
       expect(app.state.todos.length).toEqual(1);
       expect(app.state.todos[0].text).toEqual('My newest todo');
+      expect(app.state.todos[0].createdAt).toBeA('number');
+      expect(app.state.todos[0].completedAt).toEqual(undefined);
     });
   });
 
@@ -36,12 +38,8 @@ describe('TodoApp', () => {
       app.setState({todos: dummyTodos});
 
       app.handleTodoToggle(3);
-      expect(app.state.todos).toEqual([
-        {id: 1, text: "Walk the dog.", completed: false},
-        {id: 2, text: "Do homework.", completed: true},
-        {id: 3, text: "Make my bed.", completed: true},
-        {id: 4, text: "Workout.", completed: false},
-      ]);
+      expect(app.state.todos[2].completed).toEqual(true);
+      expect(app.state.todos[2].completedAt).toBeA('number');
     });
   });
 });
