@@ -40,6 +40,10 @@ describe('TodoApp', () => {
       app.handleTodoToggle(3);
       expect(app.state.todos[2].completed).toEqual(true);
       expect(app.state.todos[2].completedAt).toBeA('number');
+
+      app.handleTodoToggle(3);
+      expect(app.state.todos[2].completed).toEqual(false);
+      expect(app.state.todos[2].completedAt).toEqual(undefined);
     });
   });
 });
