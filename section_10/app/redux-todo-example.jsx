@@ -9,8 +9,6 @@ var stateDefault = {
 }
 
 var reducer = (state = stateDefault, action) => {
-  console.log('New action', action);
-
   switch (action.type) {
     case 'CHANGE_SEARCH_TEXT':
       return {
@@ -22,27 +20,40 @@ var reducer = (state = stateDefault, action) => {
   }
 };
 
-var store = redux.createStore(reducer);
+// The reducer is our object above which returns the new state.
+// redux.compose() lets us add different middleware
+//  Here we're adding in the Chrome Redux DevTools middleware
+var store = redux.createStore(reducer, redux.compose(
+  window.devToolsExtension ? window.devToolsExtension() : (f) => {
+    return f;
+  }
+));
 
-var currentState = store.getState();
-var action = {
+// subscribe to changes
+// Note: I know it's super weird to name the subscription 'unsubscribe',
+//  but it lets us unsubscribe in the future by running `unsubscribe();` 
+var unsubscribe = store.subscribe(() => {
+  var state = store.getState();
+  console.log('New state is', state);
+  document.getElementById('app').innerHTML = state.searchText;
+})
+
+
+store.dispatch({
   type: 'CHANGE_SEARCH_TEXT',
   searchText: 'work'
-};
+});
 
-store.dispatch(action);
-var currentState = store.getState();
-console.log("search text = ", currentState.searchText)
+//  Just leaving this here to show that it works
+// unsubscribe();
+
+store.dispatch({
+  type: 'CHANGE_SEARCH_TEXT',
+  searchText: 'play'
+});
 
 // var store = redux.createStore(reducer, redux.compose);
 
-// // subscribe to changes
-
-// store.subscribe(() => {
-//   var state = store.getState();
-
-//   console.log('Name is', state.name);
-// })
 
 
 
