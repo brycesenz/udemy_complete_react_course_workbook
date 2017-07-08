@@ -9,35 +9,68 @@ var stateDefault = {
 }
 var nextTodoId = 1;
 
-var reducer = (state = stateDefault, action) => {
+// var oldReducer = (state = stateDefault, action) => {
+//   switch (action.type) {
+//     case 'CHANGE_SEARCH_TEXT':
+//       return {
+//         ...state,
+//         searchText: action.searchText
+//       };
+//     case 'ADD_TODO':
+//       return {
+//         ...state,
+//         todos: [
+//           ...state.todos,
+//           {
+//             id: nextTodoId++,
+//             todo: action.todo
+//           }
+//         ]
+//       }
+//     case 'REMOVE_TODO':
+//       return {
+//         ...state,
+//         todos: state.todos.filter((todo) => {
+//           return todo.id !== action.id;
+//         })
+//       }
+//     default:
+//       return state;
+//   }
+// };
+
+var searchTextReducer = (state = '', action) => {
   switch (action.type) {
     case 'CHANGE_SEARCH_TEXT':
-      return {
-        ...state,
-        searchText: action.searchText
-      };
-    case 'ADD_TODO':
-      return {
-        ...state,
-        todos: [
-          ...state.todos,
-          {
-            id: nextTodoId++,
-            todo: action.todo
-          }
-        ]
-      }
-    case 'REMOVE_TODO':
-      return {
-        ...state,
-        todos: state.todos.filter((todo) => {
-          return todo.id !== action.id;
-        })
-      }
+      return action.searchText;
     default:
       return state;
   }
-};
+}
+
+var todoReducer = (state = [], action) => {
+  switch (action.type) {
+    case 'ADD_TODO':
+      return [
+        ...state,
+        {
+          id: nextTodoId++,
+          todo: action.todo
+        }
+      ]
+    case 'REMOVE_TODO':
+      return state.filter((todo) => {
+        return todo.id !== action.id;
+      })
+    default:
+      return state;  
+  }
+}
+
+var reducer = redux.combineReducers({
+  searchText: searchTextReducer,
+  todos: todoReducer
+})
 
 // The reducer is our object above which returns the new state.
 // redux.compose() lets us add different middleware
