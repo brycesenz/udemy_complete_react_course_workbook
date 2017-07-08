@@ -7,6 +7,7 @@ var stateDefault = {
   showCompleted: false, 
   todos: []
 }
+var nextTodoId = 1;
 
 var reducer = (state = stateDefault, action) => {
   switch (action.type) {
@@ -15,6 +16,24 @@ var reducer = (state = stateDefault, action) => {
         ...state,
         searchText: action.searchText
       };
+    case 'ADD_TODO':
+      return {
+        ...state,
+        todos: [
+          ...state.todos,
+          {
+            id: nextTodoId++,
+            todo: action.todo
+          }
+        ]
+      }
+    case 'REMOVE_TODO':
+      return {
+        ...state,
+        todos: state.todos.filter((todo) => {
+          return todo.id !== action.id;
+        })
+      }
     default:
       return state;
   }
@@ -48,14 +67,27 @@ store.dispatch({
 // unsubscribe();
 
 store.dispatch({
+  type: 'ADD_TODO',
+  todo: 'Eat lunch.'
+});
+
+
+store.dispatch({
+  type: 'ADD_TODO',
+  todo: 'Walk the dog.'
+});
+
+store.dispatch({
+  type: 'ADD_TODO',
+  todo: 'Go running.'
+});
+
+store.dispatch({
+  type: 'REMOVE_TODO',
+  id: 2
+});
+
+store.dispatch({
   type: 'CHANGE_SEARCH_TEXT',
   searchText: 'play'
 });
-
-// var store = redux.createStore(reducer, redux.compose);
-
-
-
-
-// // Returns search text matching our string 'work'
-// store.dispatch(action)
