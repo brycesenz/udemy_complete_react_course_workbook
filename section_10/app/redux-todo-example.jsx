@@ -2,43 +2,8 @@ var redux = require('redux');
 
 console.log('starting redux example');
 
-var stateDefault = {
-  searchText: '', 
-  showCompleted: false, 
-  todos: []
-}
-var nextTodoId = 1;
-
-// var oldReducer = (state = stateDefault, action) => {
-//   switch (action.type) {
-//     case 'CHANGE_SEARCH_TEXT':
-//       return {
-//         ...state,
-//         searchText: action.searchText
-//       };
-//     case 'ADD_TODO':
-//       return {
-//         ...state,
-//         todos: [
-//           ...state.todos,
-//           {
-//             id: nextTodoId++,
-//             todo: action.todo
-//           }
-//         ]
-//       }
-//     case 'REMOVE_TODO':
-//       return {
-//         ...state,
-//         todos: state.todos.filter((todo) => {
-//           return todo.id !== action.id;
-//         })
-//       }
-//     default:
-//       return state;
-//   }
-// };
-
+// searchText reducer and action generators
+//-------------------------------------
 var searchTextReducer = (state = '', action) => {
   switch (action.type) {
     case 'CHANGE_SEARCH_TEXT':
@@ -48,6 +13,16 @@ var searchTextReducer = (state = '', action) => {
   }
 }
 
+var changeSearchText = (searchText) => {
+  return {
+    type: 'CHANGE_SEARCH_TEXT',
+    searchText
+  }
+}
+
+// todo reducer and action generators
+//-------------------------------------
+var nextTodoId = 1;
 var todoReducer = (state = [], action) => {
   switch (action.type) {
     case 'ADD_TODO':
@@ -65,6 +40,20 @@ var todoReducer = (state = [], action) => {
     default:
       return state;  
   }
+}
+
+var addTodo = (todo) => {
+  return {
+    type: 'ADD_TODO',
+    todo
+  }  
+}
+
+var removeTodo = (id) => {
+  return {
+    type: 'REMOVE_TODO',
+    id
+  }  
 }
 
 var reducer = redux.combineReducers({
@@ -91,36 +80,17 @@ var unsubscribe = store.subscribe(() => {
 })
 
 
-store.dispatch({
-  type: 'CHANGE_SEARCH_TEXT',
-  searchText: 'work'
-});
+store.dispatch(changeSearchText('work'));
 
 //  Just leaving this here to show that it works
 // unsubscribe();
 
-store.dispatch({
-  type: 'ADD_TODO',
-  todo: 'Eat lunch.'
-});
+store.dispatch(addTodo('Eat lunch.'));
 
+store.dispatch(addTodo('Walk the dog.'));
 
-store.dispatch({
-  type: 'ADD_TODO',
-  todo: 'Walk the dog.'
-});
+store.dispatch(addTodo('Go running.'));
 
-store.dispatch({
-  type: 'ADD_TODO',
-  todo: 'Go running.'
-});
+store.dispatch(removeTodo(2));
 
-store.dispatch({
-  type: 'REMOVE_TODO',
-  id: 2
-});
-
-store.dispatch({
-  type: 'CHANGE_SEARCH_TEXT',
-  searchText: 'play'
-});
+store.dispatch(changeSearchText('play'));
