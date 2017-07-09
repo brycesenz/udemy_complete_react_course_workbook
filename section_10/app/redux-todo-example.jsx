@@ -1,4 +1,5 @@
 var redux = require('redux');
+var axios = require('axios');
 
 console.log('starting redux example');
 
@@ -56,9 +57,53 @@ var removeTodo = (id) => {
   }  
 }
 
+// map reducer and action generators
+//-------------------------------------
+var mapReducer = (state = {isFetching: false, url: undefined}, action) => {
+  switch (action.type) {
+    case 'START_LOCATION_FETCH':
+      return {
+        isFetching: true,
+        url: undefined
+      }
+    case 'COMPLETE_LOCATION_FETCH':
+      return {
+        isFetching: false,
+        url: action.url
+      }
+    default:
+      return state;  
+  }
+}
+
+var startLocationFetch = () => {
+  return {
+    type: 'START_LOCATION_FETCH'
+  }
+}
+
+var completeLocationFetch = (url) => {
+  return {
+    type: 'COMPLETE_LOCATION_FETCH',
+    url
+  }
+}
+
+var fetchLocation = () => {
+  store.dispatch(startLocationFetch());
+
+  axios.get('http://ipinfo.io').then((res) => {
+    var loc = res.data.loc;
+    console.log('fetching loc', loc)
+    var baseUrl = 'http://maps.google.com?q=';
+    store.dispatch(completeLocationFetch(baseUrl + loc));
+  })
+}
+
 var reducer = redux.combineReducers({
   searchText: searchTextReducer,
-  todos: todoReducer
+  todos: todoReducer,
+  map: mapReducer
 })
 
 // The reducer is our object above which returns the new state.
@@ -76,7 +121,13 @@ var store = redux.createStore(reducer, redux.compose(
 var unsubscribe = store.subscribe(() => {
   var state = store.getState();
   console.log('New state is', state);
-  document.getElementById('app').innerHTML = state.searchText;
+
+  if (state.map.isFetching) { 
+    document.getElementById('app').innerHTML = 'LOADING';
+  }
+  else {
+    document.getElementById('app').innerHTML = '<a href="'+ state.map.url +'" target="_blank">View your location</a>';
+  }
 })
 
 
@@ -92,5 +143,7 @@ store.dispatch(addTodo('Walk the dog.'));
 store.dispatch(addTodo('Go running.'));
 
 store.dispatch(removeTodo(2));
+
+store.dispatch(fetchLocation());
 
 store.dispatch(changeSearchText('play'));
