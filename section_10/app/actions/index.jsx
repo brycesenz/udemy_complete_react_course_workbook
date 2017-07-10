@@ -7,6 +7,12 @@ export var changeSearchText = (searchText) => {
   }
 }
 
+export var toggleShowCompleted = () => {
+  return {
+    type: 'TOGGLE_SHOW_COMPLETED'
+  }  
+}
+
 export var addTodo = (todo) => {
   return {
     type: 'ADD_TODO',
@@ -17,6 +23,13 @@ export var addTodo = (todo) => {
 export var removeTodo = (id) => {
   return {
     type: 'REMOVE_TODO',
+    id
+  }  
+}
+
+export var toggleTodo = (id) => {
+  return {
+    type: 'TOGGLE_TODO',
     id
   }  
 }
