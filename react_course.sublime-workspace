@@ -1,0 +1,1183 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"com",
+				"completeLocationFetch"
+			],
+			[
+				"star",
+				"startLocationFetch"
+			],
+			[
+				"is",
+				"isFetching"
+			],
+			[
+				"add",
+				"addTodo"
+			],
+			[
+				"cha",
+				"changeSearchText"
+			],
+			[
+				"sear",
+				"searchTextReducer"
+			],
+			[
+				"de",
+				"devToolsExtensions"
+			],
+			[
+				"sera",
+				"searchText"
+			],
+			[
+				"redu",
+				"reducer"
+			],
+			[
+				"get",
+				"getState"
+			],
+			[
+				"stat",
+				"stateDefault"
+			],
+			[
+				"payme",
+				"payment_frequency"
+			],
+			[
+				"des",
+				"described_class"
+			],
+			[
+				"file",
+				"file_key_name"
+			],
+			[
+				"sig",
+				"signatory_ref"
+			],
+			[
+				"new",
+				"new_filename"
+			],
+			[
+				"in",
+				"instance"
+			],
+			[
+				"stored",
+				"stored_legal_document"
+			],
+			[
+				"pdf_",
+				"pdf_content_type"
+			],
+			[
+				"start",
+				"startTimer"
+			],
+			[
+				"coun",
+				"countdownStatus"
+			],
+			[
+				"cou",
+				"countdownStatus"
+			],
+			[
+				"on",
+				"onSetCountdown"
+			],
+			[
+				"Coun",
+				"CountdownForm"
+			],
+			[
+				"COun",
+				"CountdownForm"
+			],
+			[
+				"bord",
+				"border-radius"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"React",
+				"ReactDOM"
+			],
+			[
+				"form",
+				"formatSeconds"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"color",
+				"background-color"
+			],
+			[
+				"mo",
+				"modal"
+			],
+			[
+				"Rea",
+				"ReactDOM"
+			],
+			[
+				"modal",
+				"modalMarkup"
+			],
+			[
+				"Reac",
+				"ReactDOMServer"
+			],
+			[
+				"en",
+				"encodedLocation"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"eo",
+				"errorMessage"
+			],
+			[
+				"err",
+				"errorMessage"
+			],
+			[
+				"top",
+				"top-bar-lift"
+			],
+			[
+				"j",
+				"jquery"
+			],
+			[
+				"sal",
+				"sales_tax_rate"
+			],
+			[
+				"rend",
+				"renderMessage"
+			],
+			[
+				"requ",
+				"requestUrl"
+			],
+			[
+				"Weather",
+				"WeatherForm"
+			],
+			[
+				"Wea",
+				"WeatherMessage"
+			],
+			[
+				"Obj",
+				"ObjTwo"
+			],
+			[
+				"O",
+				"ObjOne"
+			],
+			[
+				"Gre",
+				"GreeterForm"
+			],
+			[
+				"Gr",
+				"GreeterForm"
+			],
+			[
+				"Gree",
+				"GreeterMessage"
+			],
+			[
+				"RE",
+				"ReactDOM"
+			],
+			[
+				"name",
+				"nameRef"
+			],
+			[
+				"cont",
+				"contacted_at"
+			],
+			[
+				"welcome",
+				"welcome_call_record"
+			],
+			[
+				"welcom",
+				"welcome_call_record_id"
+			],
+			[
+				"attem",
+				"attempted_welcome_call_record"
+			],
+			[
+				"comp",
+				"complete_welcome_call_record"
+			],
+			[
+				"deli",
+				"delivery_verified"
+			],
+			[
+				"reuc",
+				"recurring_payments"
+			],
+			[
+				"ac",
+				"active_payment_accounts"
+			],
+			[
+				"payment",
+				"payment_accounts"
+			],
+			[
+				"click",
+				"click_link"
+			],
+			[
+				"modi",
+				"modification"
+			],
+			[
+				"fi",
+				"first_modified_installment_date"
+			],
+			[
+				"fu",
+				"future_hash"
+			],
+			[
+				"bal",
+				"balloon_payment_amount"
+			],
+			[
+				"inst",
+				"installment_amount"
+			],
+			[
+				"down",
+				"down_payment_amount"
+			],
+			[
+				"sales",
+				"sales_price"
+			],
+			[
+				"sales_",
+				"sales_tax_rate"
+			],
+			[
+				"term",
+				"terms_number"
+			],
+			[
+				"mod",
+				"modification"
+			],
+			[
+				"unf",
+				"unfundable_note"
+			],
+			[
+				"Mark",
+				"MarkReceiptUnfundable"
+			],
+			[
+				"other",
+				"other_note"
+			],
+			[
+				"voie",
+				"voided_installments"
+			],
+			[
+				"first",
+				"first_name"
+			],
+			[
+				"credit",
+				"credit_card"
+			],
+			[
+				"ball",
+				"balloon_payment_1"
+			],
+			[
+				"late",
+				"late_fee_1"
+			],
+			[
+				"have",
+				"have_db_column"
+			],
+			[
+				"nex",
+				"next_pay_date"
+			],
+			[
+				"rece",
+				"receipt"
+			],
+			[
+				"la",
+				"latest_delivery_date"
+			],
+			[
+				"app",
+				"application"
+			],
+			[
+				"time",
+				"time_cutoff"
+			],
+			[
+				"mon",
+				"money_order"
+			],
+			[
+				"pay",
+				"payment_intent"
+			],
+			[
+				"earli",
+				"earliest_available_date"
+			],
+			[
+				"ne",
+				"next_payment_date"
+			],
+			[
+				"semi",
+				"semimonthly_1_15"
+			],
+			[
+				"raise",
+				"raise_error"
+			],
+			[
+				"freq",
+				"frequency_classes"
+			],
+			[
+				"model",
+				"model_class"
+			],
+			[
+				"freqye",
+				"frequency"
+			],
+			[
+				"fre",
+				"frequency_classes"
+			],
+			[
+				"next",
+				"next_payment_date"
+			],
+			[
+				"prod",
+				"product_delivery_date"
+			],
+			[
+				"earl",
+				"earliest_available_date"
+			],
+			[
+				"incom",
+				"income_source_next_pay_date"
+			],
+			[
+				"inc",
+				"income_source_payment_frequency"
+			],
+			[
+				"ini",
+				"initial_payment_policy"
+			],
+			[
+				"all",
+				"allows_cash_payments"
+			],
+			[
+				"over",
+				"override_note"
+			],
+			[
+				"rec",
+				"received_at"
+			],
+			[
+				"trans",
+				"transactions"
+			],
+			[
+				"trx",
+				"trxn_time"
+			],
+			[
+				"sub",
+				"subject"
+			],
+			[
+				"su",
+				"subject"
+			],
+			[
+				"expi",
+				"expired"
+			],
+			[
+				"rej",
+				"rejected"
+			],
+			[
+				"Fac",
+				"FactoryGirl"
+			],
+			[
+				"acti",
+				"active_rental_purchase_legal_agreement"
+			],
+			[
+				"mark",
+				"mark_chosen"
+			],
+			[
+				"fun",
+				"funding_report"
+			],
+			[
+				"si",
+				"signed_employee_name"
+			],
+			[
+				"cust",
+				"customer_identification_verified"
+			],
+			[
+				"do",
+				"down_payment_collected"
+			],
+			[
+				"last",
+				"last_name"
+			],
+			[
+				"fir",
+				"first_name"
+			],
+			[
+				"che",
+				"checker2"
+			],
+			[
+				"c",
+				"checker2"
+			],
+			[
+				"lo",
+				"log_payment"
+			],
+			[
+				"Wi",
+				"WizardStep"
+			],
+			[
+				"defa",
+				"defaultOnCancel"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Elixir/elixir-mix-test.sublime-build",
+					""
+				],
+				[
+					"Packages/Elixir/elixir.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Elixir/elixir-mix-test.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "pac",
+		"selected_items":
+		[
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"ansi",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Discover Packages"
+			],
+			[
+				"pack",
+				"Package Control: Discover Packages"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 417.0,
+		"history":
+		[
+			"elixir --version",
+			"ls",
+			"iex -S mix",
+			"iex",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_10/app",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_10/app/tests",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_10/app/tests/reducers"
+	],
+	"file_history":
+	[
+		"/Users/brycesenz/Library/Application Support/Sublime Text 3/Packages/User/Karma.sublime-build",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_10/.sublime-project",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_10/app/actions/index.jsx",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_10/app/tests/actions/index.test.jsx",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_10/app/app.jsx",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_10/app/redux-todo-example.jsx",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_10/app/reducers/index.jsx",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_10/app/store/configureStore.jsx",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_10/webpack.config.js",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_10/app/redux-example.jsx",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_10/public/index.html",
+		"/Users/brycesenz/Code/collector/web/package.json",
+		"/Users/brycesenz/Code/collector/web/public/index.html.old",
+		"/Users/brycesenz/Code/collector/web/src/containers/styles/base/_foundation-settings.scss",
+		"/Users/brycesenz/Code/collector/web/src/containers/styles/base/_variables.scss",
+		"/Users/brycesenz/Code/collector/web/webpack.config.js.OLD",
+		"/Users/brycesenz/Code/collector/web/src/containers/components/NotFound.jsx",
+		"/Users/brycesenz/Code/collector/web/src/containers/components/Home.jsx",
+		"/Users/brycesenz/Code/collector/web/src/containers/app.jsx",
+		"/Users/brycesenz/Code/collector/web/app/styles/app.scss",
+		"/Users/brycesenz/Code/collector/web/src/reducers/index.js",
+		"/Users/brycesenz/Code/collector/web/src/store/index.js",
+		"/Users/brycesenz/Code/collector/web/app/components/NotFound.js",
+		"/Users/brycesenz/Code/collector/web/app/components/Home.js",
+		"/Users/brycesenz/Code/collector/web/src/store",
+		"/Users/brycesenz/Code/collector/web/src/index.jsx",
+		"/Users/brycesenz/Code/collector/web/webpack.config.js",
+		"/Users/brycesenz/Code/collector/web/README.md",
+		"/Users/brycesenz/Code/collector/web/.eslintrc",
+		"/Users/brycesenz/Code/collector/web/.flowconfig",
+		"/Users/brycesenz/Code/collector/api/.gitignore",
+		"/Users/brycesenz/Code/collector/api/config/dev.exs",
+		"/Users/brycesenz/Code/collector/api/config/dev.secret.exs",
+		"/Users/brycesenz/Code/one-ring/app/views/employee/contracts/show.html.slim",
+		"/Users/brycesenz/Code/one-ring/spec/features/employee/lease_agreements/add_terms_spec.rb",
+		"/Users/brycesenz/Code/one-ring/spec/decorators/contracts/contract_decorator_spec.rb",
+		"/Users/brycesenz/Code/one-ring/app/value_objects/date_frequency.rb",
+		"/Users/brycesenz/Code/one-ring/app/decorators/contracts/contract_decorator.rb",
+		"/Users/brycesenz/Code/one-ring/app/views/employee/contracts/terms.html.slim",
+		"/Users/brycesenz/Code/one-ring/app/reports/hourly/itreasury_store_fundings_report.rb",
+		"/Users/brycesenz/Code/one-ring/spec/features/employee/payment_promises/creating_payment_promise_spec.rb",
+		"/Users/brycesenz/Code/one-ring/app/services/payment_promises/create_promise_to_pay.rb",
+		"/Users/brycesenz/Code/one-ring/spec/services/payment_promises/create_promise_to_pay_spec.rb",
+		"/Users/brycesenz/Code/one-ring/app/services/payment_promises/edit_payment_promise.rb",
+		"/Users/brycesenz/Code/one-ring/spec/services/payment_promises/edit_payment_promise_spec.rb",
+		"/Users/brycesenz/Code/one-ring/app/models/users/store.rb",
+		"/Users/brycesenz/Code/one-ring/spec/models/users/store_spec.rb",
+		"/Users/brycesenz/Code/one-ring/app/views/employee/stores/show.html.slim",
+		"/Users/brycesenz/Code/one-ring/app/views/employee/stores/_store_info_summary.html.slim",
+		"/Users/brycesenz/Code/one-ring/app/models/concerns/storable.rb",
+		"/Users/brycesenz/Code/one-ring/app/models/legal_agreements/concerns/pdf_writeable.rb",
+		"/Users/brycesenz/Code/one-ring/app/models/legal_agreements/adverse_action_letter.rb",
+		"/Users/brycesenz/Code/one-ring/app/models/legal_agreements/arbitration_agreement.rb",
+		"/Users/brycesenz/Code/one-ring/app/models/legal_agreements/autodialer_consent.rb",
+		"/Users/brycesenz/Code/one-ring/app/models/legal_agreements/credit_authorization.rb",
+		"/Users/brycesenz/Code/one-ring/app/models/legal_agreements/customer_terms_agreement.rb",
+		"/Users/brycesenz/Code/one-ring/app/models/legal_agreements/esign_agreement.rb",
+		"/Users/brycesenz/Code/one-ring/app/models/legal_agreements/lease_agreement_activation_verification.rb",
+		"/Users/brycesenz/Code/one-ring/app/models/legal_agreements/recurring_payment_authorization.rb",
+		"/Users/brycesenz/Code/one-ring/app/models/legal_agreements/single_payment_authorization.rb",
+		"/Users/brycesenz/Code/one-ring/app/models/legal_agreements/store_terms_legal_agreement.rb",
+		"/Users/brycesenz/Code/one-ring/app/models/legal_agreements/text_message_marketing_consent.rb",
+		"/Users/brycesenz/Code/one-ring/app/models/legal_agreements/transactional_text_message_consent.rb",
+		"/Users/brycesenz/Code/one-ring/app/models/legal_agreements/rental_purchase_legal_agreement.rb",
+		"/Users/brycesenz/Code/one-ring/spec/models/legal_agreements/credit_authorization_spec.rb",
+		"/Users/brycesenz/Code/one-ring/spec/models/legal_agreements/text_message_marketing_consent_spec.rb",
+		"/Users/brycesenz/Code/one-ring/spec/models/legal_agreements/transactional_text_message_consent_spec.rb",
+		"/Users/brycesenz/Code/one-ring/app/models/legal_agreements/concerns/legal_document_storage.rb",
+		"/Users/brycesenz/Code/one-ring/spec/models/legal_agreements/store_terms_legal_agreement_spec.rb",
+		"/Users/brycesenz/Code/one-ring/spec/models/legal_agreements/rental_purchase_legal_agreement_spec.rb",
+		"/Users/brycesenz/Code/one-ring/spec/models/legal_agreements/single_payment_authorization_spec.rb",
+		"/Users/brycesenz/Code/one-ring/spec/models/legal_agreements/esign_agreement_spec.rb",
+		"/Users/brycesenz/Code/one-ring/spec/models/legal_agreements/lease_agreement_activation_verification_spec.rb",
+		"/Users/brycesenz/Code/one-ring/spec/models/legal_agreements/recurring_payment_authorization_spec.rb",
+		"/Users/brycesenz/Code/one-ring/spec/models/legal_agreements/customer_terms_agreement_spec.rb",
+		"/Users/brycesenz/Code/one-ring/spec/models/legal_agreements/autodialer_consent_spec.rb",
+		"/Users/brycesenz/Code/one-ring/spec/models/legal_agreements/arbitration_agreement_spec.rb",
+		"/Users/brycesenz/Code/one-ring/spec/models/legal_agreements/adverse_action_letter_spec.rb",
+		"/Users/brycesenz/Code/one-ring/spec/support/model/storage_shared_examples.rb",
+		"/Users/brycesenz/Code/one-ring/spec/support/model/legal_signable_shared_examples.rb",
+		"/Users/brycesenz/Code/one-ring/app/models/legal_agreements/concerns/legal_signable.rb",
+		"/Users/brycesenz/Code/one-ring/app/models/concerns/repeatable.rb",
+		"/Users/brycesenz/Code/one-ring/app/models/legal_agreements/legal_agreement.rb",
+		"/Users/brycesenz/Code/one-ring/app/services/contact_points/send_right_to_cure_letter.rb",
+		"/Users/brycesenz/Code/one-ring/lib/paperclip_shrine_synchronization.rb",
+		"/Users/brycesenz/Code/one-ring/spec/support/custom_matchers.rb",
+		"/Users/brycesenz/Code/one-ring/spec/models/contact_points/stored_letter_spec.rb",
+		"/Users/brycesenz/Code/one-ring/app/models/contact_points/stored_letter.rb",
+		"/Users/brycesenz/Code/one-ring/app/models/legal_agreements/concerns/legal_document_behavior.rb",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_8/app/tests/components/CountdownForm.test.jsx",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_8/app/styles/base/_variables.scss",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_8/app/components/Countdown.jsx",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_8/app/tests/components/Clock.test.jsx",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_8/app/components/Clock.jsx",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_8/app/styles/components/_clock.scss",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_8/app/styles/app.scss",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_8/app/app.jsx",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_8/app/components/Nav.jsx",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_8/app/components/Main.jsx",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_8/webpack.config.js",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_8/public/index.html",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_8/package.json",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_8/app/tests/app.test.jsx",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_8/karma.conf.js",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_8/app/styles/components/_navigation.scss",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_8/app/components/Timer.jsx",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_7/app/components/ErrorModal.jsx",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_7/app/components/Weather.jsx",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_7/app/components/Nav.jsx",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_7/app/app.jsx",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_7/app/styles/app.scss",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_7/app/components/Examples.jsx",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_7/app/components/About.jsx",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_7/webpack.config.js",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_7/app/api/openWeatherMap.jsx",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_7/app/components/WeatherForm.jsx",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_7/app/components/Main.jsx",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_7/app/components/WeatherMessage.jsx",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_5/app/components/About.jsx",
+		"/Users/brycesenz/Code/one-ring/spec/features/employee/lease_agreements/viewing_lease_agreement_terms_spec.rb",
+		"/Users/brycesenz/Code/one-ring/app/models/lease_agreements/lease_agreement.rb",
+		"/Users/brycesenz/Code/one-ring/app/models/policies/early_payoff_policy.rb",
+		"/Users/brycesenz/Code/one-ring/spec/models/policies/early_payoff_policy_spec.rb",
+		"/Users/brycesenz/Code/one-ring/app/services/stores/register_store.rb",
+		"/Users/brycesenz/Code/one-ring/app/services/receipts/write_receipt.rb",
+		"/Users/brycesenz/Code/one-ring/spec/factories/legal_agreements/transactional_text_message_consent.rb",
+		"/Users/brycesenz/Code/one-ring/db/migrate/20170524175100_create_transactional_text_message_consents.rb",
+		"/Users/brycesenz/Code/one-ring/spec/services/lease_applications/submit_application_with_legal_consents_spec.rb"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			"",
+			"<current file>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"Home",
+			"break",
+			"jsx",
+			"index.js",
+			"display_payment_frequency",
+			"PaymentPromise",
+			"inshape",
+			"brycesenz",
+			".make_pdf_file",
+			".make_pdf",
+			"TempFileCreator",
+			".make_pdf",
+			"PdfWriteable",
+			"before_validation :set_file_key",
+			"define_method",
+			"signed_text",
+			".signed_text",
+			".pdf_filename",
+			".content_type",
+			"mailed_letter.pdf",
+			"it { should delegate",
+			"has stored document",
+			"has storable file",
+			"\", \"",
+			"\n",
+			"def original_early_payoff_amount",
+			"last",
+			"\", \"",
+			"RegisterCustomer",
+			"ApplicationProcessor",
+			"has_marketing_preferences_params",
+			"def has_customer_terms_consent_params",
+			"def has_credit_consent_params",
+			"def generate_html_file",
+			"\", \"",
+			"remove_refere",
+			"add_ref",
+			"create_modification",
+			"contract",
+			"ModifyContract",
+			"InstallmentScheduler",
+			"markup",
+			"Reference",
+			"StoreSerializer",
+			"\n",
+			"def has_amount_param",
+			"VerifyPaymentSchedule",
+			"Timecop",
+			"fundin",
+			"\"hang",
+			"archived_number_of_payments",
+			"Irre",
+			"ContractModifier",
+			"destroy_voided_installments",
+			"voided_installments_hash",
+			"has_correct_number_of_initial_payments?",
+			"has_correct_number_of_generated_installments?",
+			"has_correct_number_of_voided_installments?",
+			"reset_col",
+			"calculate_reimbursement",
+			"def calculate_reimbursement",
+			"Reseed",
+			"has_nested_bank_params",
+			"SeedSupport",
+			"without_",
+			"Reseed",
+			"ReseedStoreTrainingData",
+			"screen",
+			"EarlyPayoffScheduleGenerator",
+			"early_payof",
+			"def full_payoff_amount",
+			"AssignStore",
+			"financed_amount",
+			"PaymentAccountsController",
+			"make_pay",
+			"make",
+			".order(:",
+			".order",
+			"StoreApplicationFormHelper",
+			"payment",
+			"def submit_application",
+			"has_optional_income_sources_params",
+			"has_income_sources_params",
+			"link_to",
+			"receipt_paid_notification",
+			"\n",
+			"has_products_params",
+			"Timecop",
+			"has_products_params",
+			"LatestStartDatePolicy",
+			"DefaultStartDate",
+			"AddTermsOptions",
+			"DefaultStartDatePolicy",
+			"AddTermsOptions",
+			"LatestStartDatePolicy",
+			"AddTermsOptions",
+			"Timecop",
+			"ProcessPaymentSchedule",
+			"PaymentCreditGenerator",
+			"Timecop.travel",
+			"Timecop",
+			"payment_in",
+			"def accepts_in_store_payments",
+			"DefaultStartDatePolicy",
+			"DateFrequency",
+			"with_start_date",
+			"ContractEarliestStartDatePolicy",
+			"LatestStartDatePolicy",
+			"ContractEarliestStartDatePolicy",
+			"DefaultStartDatePolicy",
+			"DefaultPaymentFrequencyPolicy",
+			"\", \"",
+			"LATEST",
+			"ContractEarliestStartDatePolicy",
+			"DefaultStartDatePolicy",
+			"Timecop",
+			"DefaultPaymentFrequencyPolicy",
+			"ContractEarliestStartDatePolicy",
+			"DefaultStartDatePolicy",
+			"log_exception",
+			"UpdateLeaseAgreement",
+			"financed_a",
+			"financed_amount",
+			"This lease is active. Please call Credda",
+			"AssignStore",
+			"with registered store",
+			"payment_intent",
+			"\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\n",
+			"\", \"",
+			"\n",
+			"\", \"",
+			"",
+			"\", \"\n",
+			"\n",
+			"\", \"",
+			"iterations_between",
+			"\", \"",
+			"Suite 209",
+			"\"",
+			"\", \"",
+			"\"",
+			"\", \"03",
+			"\", \"02",
+			"\"],\n[\"",
+			"/2017\", \"",
+			", \"0",
+			"remove_column",
+			"\", \"",
+			"",
+			"\",\"\n",
+			"\n",
+			"L\n",
+			"\n\n",
+			"\n",
+			"\", \"",
+			"lexis_nexis_risk_view_risk_score",
+			"lexis_nexis_risk_view_risk_score\n\n",
+			"\n\n",
+			"\n",
+			"\", \"",
+			"55% Discount Payoff Policy",
+			"\", \"",
+			"full_payoff_amount",
+			"start_application",
+			"\", \"",
+			"",
+			"\n",
+			"\", \"",
+			"@perf_data",
+			"structure",
+			",",
+			"",
+			",",
+			"  i.integer",
+			"\", \n\"",
+			"\", \"\n\"",
+			"\",\n\"",
+			"\" => \"",
+			"",
+			"\" => \"",
+			"\"},\n{\"",
+			"\", \"",
+			"num",
+			"",
+			"\n",
+			"MerchantGuyClient",
+			"merchant_guy_client",
+			"action:",
+			"controller:",
+			"match:",
+			"\"",
+			"\\\"",
+			"str=sprintf('x0x%X_%s',toascii(str(1)),str(2:end));",
+			"str=[str str0(pos0(i)+1:pos(i)-1) sprintf('_0x%X_',toascii(str0(pos(i))))];",
+			"",
+			"\",\"",
+			"\\\"",
+			"].should",
+			"[",
+			"",
+			"\", \n              \"",
+			"",
+			"\", \"",
+			"</MsgCode>\n                      </Message>",
+			"</MsgClass>\n                        <MsgCode>",
+			"<Message xmlns=\"http://schema.microbilt.com/globals\">\n                        <MsgClass>",
+			"</Message>\n                      <Message xmlns=\"http://schema.microbilt.com/globals\">",
+			">\n\t    \t\t\t\t\t<",
+			"CL",
+			"CL\n",
+			"        Message[xmlns=\"http://schema.microbilt.com/globals\"]\n          MsgClass = \"Aggregate\"\n          MsgCode = \"\n",
+			"=>{\n",
+			"=>{\\n",
+			"str=sprintf('x0x%X_%s',toascii(str(1)),str(2:end));",
+			"str=[str str0(pos0(i)+1:pos(i)-1) sprintf('_0x%X_',toascii(str0(pos(i))))];",
+			"broker",
+			"expense",
+			"member_password",
+			"member_id",
+			"MicrobiltClient",
+			"2017",
+			"update_contract_products",
+			"'",
+			"class:",
+			"start_customer_application",
+			"selected: \"United States\"",
+			"2017"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 265.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/Karma.sublime-build",
+	"project": "react_course.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 368.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

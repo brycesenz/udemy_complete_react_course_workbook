@@ -1,0 +1,49 @@
+{
+  "folders": [{
+    "follow_symlinks": true,
+    "path": "."
+  }],
+  "settings": {
+    "detect_indentation": false,
+    "ensure_newline_at_eof_on_save": true,
+    "tab_size": 2,
+    "file_exclude_patterns": [
+      "*.sublime-project",
+      "*.sublime-workspace",
+      "*.min.*"
+    ],
+    "folder_exclude_patterns": [
+      "node_modules",
+      "reports",
+      ".git",
+      ".svn"
+    ],
+    "rulers": [
+      100
+    ],
+    "translate_tabs_to_spaces": true,
+    "trim_automatic_white_space": true,
+    "trim_trailing_white_space_on_save": true
+  },
+  "build_systems": [{
+    "name": "Karma",
+    "path": "$HOME/.nvm/v0.10.26/bin:$PATH",
+    "cmd": [
+      "$project_path/section_10/node_modules/karma/bin/karma",
+      "start",
+      "$project_path/section_10/karma.conf.js",
+      "--no-colors",
+      "--single-run",
+      "--log-level",
+      "disable",
+      "--reporters",
+      "dots"
+    ],
+    "selector": "source.js",
+    "working_dir": "$project_path/section_10",
+    // redirecting output to the SublimeANSI plugin
+    // this plugin apply color to Karma output
+    "syntax": "Packages/ANSIescape/ANSI.tmLanguage",
+    "target": "ansi_color_build"
+  }]
+}
