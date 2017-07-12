@@ -39,7 +39,7 @@ var todoReducer = (state = [], action) => {
         return todo.id !== action.id;
       })
     default:
-      return state;  
+      return state;
   }
 }
 
@@ -47,14 +47,14 @@ var addTodo = (todo) => {
   return {
     type: 'ADD_TODO',
     todo
-  }  
+  }
 }
 
 var removeTodo = (id) => {
   return {
     type: 'REMOVE_TODO',
     id
-  }  
+  }
 }
 
 // map reducer and action generators
@@ -72,7 +72,7 @@ var mapReducer = (state = {isFetching: false, url: undefined}, action) => {
         url: action.url
       }
     default:
-      return state;  
+      return state;
   }
 }
 
@@ -117,12 +117,12 @@ var store = redux.createStore(reducer, redux.compose(
 
 // subscribe to changes
 // Note: I know it's super weird to name the subscription 'unsubscribe',
-//  but it lets us unsubscribe in the future by running `unsubscribe();` 
+//  but it lets us unsubscribe in the future by running `unsubscribe();`
 var unsubscribe = store.subscribe(() => {
   var state = store.getState();
   console.log('New state is', state);
 
-  if (state.map.isFetching) { 
+  if (state.map.isFetching) {
     document.getElementById('app').innerHTML = 'LOADING';
   }
   else {

@@ -1,12 +1,12 @@
 var redux = require('redux');
 var thunk = require('redux-thunk').default;
-var {searchTextReducer, todoReducer, mapReducer} = require('./../reducers/index');
+var { searchTextReducer, showCompletedReducer, todoReducer } = require('./../reducers/index');
 
 export var configure = () => {
   var reducer = redux.combineReducers({
     searchText: searchTextReducer,
+    showCompleted: showCompletedReducer,
     todos: todoReducer,
-    map: mapReducer
   })
 
   // The reducer is our object above which returns the new state.
