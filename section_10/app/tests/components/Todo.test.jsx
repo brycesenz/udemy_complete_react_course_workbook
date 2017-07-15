@@ -4,7 +4,8 @@ var expect = require('expect');
 var $ = require('jQuery');
 var TestUtils = require('react-addons-test-utils');
 
-var Todo = require('Todo');
+// Have to use destructuring to get the non-default version (that doesn't use Redux)
+var {Todo} = require('Todo');
 
 describe('Todo', () => {
   it('should exist', () => {
@@ -22,13 +23,16 @@ describe('Todo', () => {
   });
 
   describe('handleToggle', () => {
-    it('should call the handler when toggled', () => {
+    it('should dispatch TOGGLE_TODO action on click', () => {
       var spy = expect.createSpy();
-      var todo = TestUtils.renderIntoDocument(<Todo id={4} text="Dummy Todo." completed={false} onToggle={spy}/>);
+      var todo = TestUtils.renderIntoDocument(<Todo id={4} text="Dummy Todo." completed={false} dispatch={spy}/>);
  
       todo.refs.completed.checked = true;
       TestUtils.Simulate.change(todo.refs.completed)
-      expect(spy).toHaveBeenCalledWith(4);
+      expect(spy).toHaveBeenCalledWith({
+        type: 'TOGGLE_TODO',
+        id: 4
+      });
     });
   });
 });

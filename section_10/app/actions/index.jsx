@@ -10,28 +10,28 @@ export var changeSearchText = (searchText) => {
 export var toggleShowCompleted = () => {
   return {
     type: 'TOGGLE_SHOW_COMPLETED'
-  }  
+  }
 }
 
-export var addTodo = (todo) => {
+export var addTodo = (text) => {
   return {
     type: 'ADD_TODO',
-    todo
-  }  
+    text
+  }
 }
 
 export var removeTodo = (id) => {
   return {
     type: 'REMOVE_TODO',
     id
-  }  
+  }
 }
 
 export var toggleTodo = (id) => {
   return {
     type: 'TOGGLE_TODO',
     id
-  }  
+  }
 }
 
 export var startLocationFetch = () => {

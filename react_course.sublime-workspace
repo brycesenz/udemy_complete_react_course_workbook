@@ -4,8 +4,16 @@
 		"selected_items":
 		[
 			[
+				"Todo",
+				"TodoList"
+			],
+			[
+				"show",
+				"showCompletedReducer"
+			],
+			[
 				"com",
-				"completeLocationFetch"
+				"completedAt"
 			],
 			[
 				"star",
@@ -506,19 +514,46 @@
 			[
 				"lo",
 				"log_payment"
-			],
-			[
-				"Wi",
-				"WizardStep"
-			],
-			[
-				"defa",
-				"defaultOnCancel"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "section_10/app/app.jsx",
+			"settings":
+			{
+				"buffer_size": 666,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "section_10/app/reducers/index.jsx",
+			"settings":
+			{
+				"buffer_size": 1531,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "section_10/app/components/TodoList.jsx",
+			"settings":
+			{
+				"buffer_size": 701,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "section_10/app/components/Todo.jsx",
+			"settings":
+			{
+				"buffer_size": 1285,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -606,22 +641,28 @@
 	"expanded_folders":
 	[
 		"/Users/brycesenz/Code/udemy_complete_react_course_workbook",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_10",
 		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_10/app",
-		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_10/app/tests",
-		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_10/app/tests/reducers"
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_10/app/actions",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_10/app/components",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_10/app/reducers",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_10/app/store"
 	],
 	"file_history":
 	[
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_10/app/actions/index.jsx",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_10/app/components/TodoApp.jsx",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_10/webpack.config.js",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_10/app/store/configureStore.jsx",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_10/app/redux-example.jsx",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_10/app/reducers/index.jsx",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_10/app/tests/reducers/index.test.jsx",
+		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/react_course.sublime-project",
 		"/Users/brycesenz/Library/Application Support/Sublime Text 3/Packages/User/Karma.sublime-build",
 		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_10/.sublime-project",
-		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_10/app/actions/index.jsx",
 		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_10/app/tests/actions/index.test.jsx",
 		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_10/app/app.jsx",
 		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_10/app/redux-todo-example.jsx",
-		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_10/app/reducers/index.jsx",
-		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_10/app/store/configureStore.jsx",
-		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_10/webpack.config.js",
-		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_10/app/redux-example.jsx",
 		"/Users/brycesenz/Code/udemy_complete_react_course_workbook/section_10/public/index.html",
 		"/Users/brycesenz/Code/collector/web/package.json",
 		"/Users/brycesenz/Code/collector/web/public/index.html.old",
@@ -736,10 +777,7 @@
 		"/Users/brycesenz/Code/one-ring/app/models/policies/early_payoff_policy.rb",
 		"/Users/brycesenz/Code/one-ring/spec/models/policies/early_payoff_policy_spec.rb",
 		"/Users/brycesenz/Code/one-ring/app/services/stores/register_store.rb",
-		"/Users/brycesenz/Code/one-ring/app/services/receipts/write_receipt.rb",
-		"/Users/brycesenz/Code/one-ring/spec/factories/legal_agreements/transactional_text_message_consent.rb",
-		"/Users/brycesenz/Code/one-ring/db/migrate/20170524175100_create_transactional_text_message_consents.rb",
-		"/Users/brycesenz/Code/one-ring/spec/services/lease_applications/submit_application_with_legal_consents_spec.rb"
+		"/Users/brycesenz/Code/one-ring/app/services/receipts/write_receipt.rb"
 	],
 	"find":
 	{
@@ -1089,8 +1127,121 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "section_10/app/app.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 666,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								334,
+								334
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "section_10/app/reducers/index.jsx",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1531,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								652,
+								652
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "section_10/app/components/TodoList.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 701,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								173,
+								173
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "section_10/app/components/Todo.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1285,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								515,
+								554
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -1133,7 +1284,7 @@
 	{
 		"height": 0.0
 	},
-	"pinned_build_system": "Packages/User/Karma.sublime-build",
+	"pinned_build_system": "Karma",
 	"project": "react_course.sublime-project",
 	"replace":
 	{

@@ -20,7 +20,7 @@ describe('Actions', () => {
   it('should generate add todo action', () => {
     var action = {
       type: 'ADD_TODO',
-      todo: 'walk dog'
+      text: 'walk dog'
     };
     expect(actions.addTodo('walk dog')).toEqual(action);
   });
