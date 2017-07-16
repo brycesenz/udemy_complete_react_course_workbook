@@ -40,6 +40,8 @@ export var todoReducer = (state = [], action) => {
             completed: !todo.completed,
             completedAt: todo.completed ? undefined : moment().unix()
           }
+        } else {
+          return todo;
         }
       });
     case 'REMOVE_TODO':

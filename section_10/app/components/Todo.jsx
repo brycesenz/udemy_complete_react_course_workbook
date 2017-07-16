@@ -10,6 +10,7 @@ export var Todo = React.createClass({
     completed: React.PropTypes.bool
   },
   handleToggle: function(evt) {
+    alert('hello');
     this.props.dispatch(actions.toggleTodo(this.props.id))
   },
 

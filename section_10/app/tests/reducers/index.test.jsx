@@ -85,10 +85,24 @@ describe('Reducers', () => {
     var firstItem = newState[0];
     expect(firstItem.completed).toEqual(false);
     expect(firstItem.completedAt).toEqual(undefined);
+    var lastItem = newState[1];
+    expect(lastItem).toEqual({
+      id: 1221,
+      text: 'dummy 2',
+      completed: false,
+      completedAt: undefined
+    });
 
     // toggling from false to true
     var newState = reducers.todoReducer(df(initialState), df(action_2));
     expect(newState.length).toEqual(2);
+    var firstItem = newState[0];
+    expect(firstItem).toEqual({
+      id: 1435,
+      text: 'dummy 1',
+      completed: true,
+      completedAt: 'some time'
+    });
     var lastItem = newState[1];
     expect(lastItem.completed).toEqual(true);
     expect(lastItem.completedAt).toNotEqual(undefined);
