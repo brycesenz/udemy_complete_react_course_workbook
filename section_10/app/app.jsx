@@ -3,17 +3,18 @@ var ReactDOM = require('react-dom');
 var { Provider } = require('react-redux');
 
 var TodoApp = require('TodoApp');
-
+var TodoAPI = require('TodoAPI');
 var store = require('configureStore').configure();
 var actions = require('actions');
 
 store.subscribe(() => {
-  console.log('state', store.getState());
+  var state = store.getState();
+  console.log('state', state);
+  TodoAPI.setTodos(state.todos);
 });
 
-store.dispatch(actions.addTodo('Eat breakfast!'));
-store.dispatch(actions.changeSearchText('boogie'));
-store.dispatch(actions.toggleShowCompleted());
+var initialTodos = TodoAPI.getTodos();
+store.dispatch(actions.addTodos(initialTodos));
 
 // load Foundation
 $(document).foundation();

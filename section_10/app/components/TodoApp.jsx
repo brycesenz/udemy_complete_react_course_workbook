@@ -2,27 +2,12 @@ var React = require('react');
 var uuid = require('node-uuid');
 var moment = require('moment');
 
-var TodoAPI = require('TodoAPI');
-
 import TodoSearch from 'TodoSearch';
 import AddTodo from 'AddTodo';
 import TodoList from 'TodoList';
 
 var TodoApp = React.createClass({
-  getInitialState: function() {
-    return {
-      searchText: '',
-      showCompleted: false,
-      todos: TodoAPI.getTodos()
-    }
-  },
-  componentDidUpdate: function() {
-    TodoAPI.setTodos(this.state.todos);
-  },
   render: function() {
-    var {todos, searchText, showCompleted} = this.state;
-    var foundTodos = TodoAPI.filterTodos(todos, searchText, showCompleted);
-
     return (
       <div className='todo-app'>
         <h1 className="page-title">Todo App</h1>

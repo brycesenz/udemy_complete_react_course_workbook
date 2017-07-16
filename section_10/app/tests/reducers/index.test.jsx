@@ -39,6 +39,34 @@ describe('Reducers', () => {
     expect(lastItem).toContain({ completed: false });
   });
 
+  it('should have todoReducer that handles adding multiple todos', () => {
+    var todoOne = {
+      id: 4,
+      text: 'Eat breakfast',
+      completed: true,
+      completedAt: 15987,
+      createdAt: 15043
+    };
+    var todoTwo = {
+      id: 8,
+      text: 'Eat dinner',
+      completed: false,
+      completedAt: undefined,
+      createdAt: 15043
+    };
+    var action = {
+      type: 'ADD_TODOS',
+      todos: [
+        todoOne,
+        todoTwo
+      ]
+    };
+
+    var newState = reducers.todoReducer(df([]), df(action));
+    expect(newState.length).toEqual(2);
+    expect(newState).toEqual([todoOne, todoTwo]);
+  });
+
   it('should have todoReducer that handles removing', () => {
     var action = {
       type: 'REMOVE_TODO',

@@ -12,7 +12,7 @@ describe('TodoSearch', () => {
   });
 
   describe('handleSearch', () => {
-    it('should call handleSearch with input text', () => {
+    it('should dispatch CHANGE_SEARCH_TEXT with input text', () => {
       var spy = expect.createSpy();
       var action = {
         type: 'CHANGE_SEARCH_TEXT',
@@ -27,7 +27,7 @@ describe('TodoSearch', () => {
       expect(spy).toHaveBeenCalledWith(action);
     });
 
-    it('should call handleSearch with change in showCompleted', () => {
+    it('should dispatch TOGGLE_SHOW_COMPLETED with change in showCompleted', () => {
       var spy = expect.createSpy();
       var action = {
         type: 'TOGGLE_SHOW_COMPLETED'

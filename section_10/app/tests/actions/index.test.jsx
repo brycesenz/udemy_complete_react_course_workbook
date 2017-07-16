@@ -25,6 +25,33 @@ describe('Actions', () => {
     expect(actions.addTodo('walk dog')).toEqual(action);
   });
 
+  it('should generate add todos action', () => {
+    var action = {
+      type: 'ADD_TODOS',
+      todos: [
+        {
+          id: 1,
+          text: 'Eat'
+        },
+        {
+          id: 2,
+          text: 'Sleep'
+        },
+      ]
+    };
+    var todosArray = [
+      {
+        id: 1,
+        text: 'Eat'
+      },
+      {
+        id: 2,
+        text: 'Sleep'
+      },
+    ]
+    expect(actions.addTodos(todosArray)).toEqual(action);
+  });
+
   it('should generate remove todo action', () => {
     var action = {
       type: 'REMOVE_TODO',

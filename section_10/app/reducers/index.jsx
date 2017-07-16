@@ -32,6 +32,20 @@ export var todoReducer = (state = [], action) => {
           completedAt: undefined
         }
       ]
+    case 'ADD_TODOS':
+      var newTodos = action.todos.map((todo) => {
+        return {
+          id: todo.id,
+          text: todo.text,
+          completed: todo.completed,
+          createdAt: todo.createdAt,
+          completedAt: todo.completedAt
+        }
+      });
+      return [
+        ...state,
+        ...newTodos
+      ]
     case 'TOGGLE_TODO':
       return state.map((todo) => {
         if (todo.id === action.id) {
